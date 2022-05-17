@@ -1,0 +1,6 @@
+.hover-visibility {
+  @apply opacity-0 transition-opacity;
+  &:hover {
+    @apply opacity-100;
+  }
+}

@@ -1,1 +1,15 @@
-<div class="column">OK</div>
+<div class="column">
+  <div class="header">
+    <button mat-button class="title">{{ title }}</button>
+    <button mat-button class="more-option">
+      <mat-icon>more_horiz</mat-icon>
+    </button>
+  </div>
+  <section class="card-section" cdkDropList>
+    <app-board-card cdkDrag></app-board-card>
+  </section>
+  <button mat-button class="create-issue">
+    <mat-icon>add</mat-icon>
+    <span class="text">Create issue</span>
+  </button>
+</div>

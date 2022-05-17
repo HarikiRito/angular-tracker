@@ -1,5 +1,30 @@
+@import 'app.scss';
+
 .column {
-  @apply py-2 bg-gray-200;
-  width: 200px;
-  height: 200px;
+  @apply p-2 bg-gray-100 rounded-lg;
+  max-width: 282px;
+  min-width: 282px;
+  .header {
+    @apply flex flex-row items-center;
+    .title {
+      @apply flex-1;
+      @apply text-left uppercase;
+      @apply font-medium;
+    }
+    .more-option {
+      @apply min-w-min;
+      @apply px-2 opacity-0;
+    }
+    &:hover .more-option {
+      @apply opacity-100;
+    }
+  }
+  .create-issue {
+    @apply flex flex-row items-center justify-center w-full;
+    @apply pl-0;
+  }
+}
+
+.card-section {
+  @apply py-2;
 }

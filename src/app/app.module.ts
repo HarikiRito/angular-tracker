@@ -9,6 +9,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BoardModule } from './board/board.module';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [

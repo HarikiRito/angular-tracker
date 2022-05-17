@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
+import { Required } from 'src/decorator/common';
 
 @Component({
   selector: 'app-board-column',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./column.component.scss'],
 })
 export class BoardColumnComponent implements OnInit {
+  @Input() @Required title!: string;
   constructor() {}
 
   ngOnInit(): void {}
